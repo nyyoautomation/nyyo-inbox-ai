@@ -1,0 +1,29 @@
+Checks (Oct 20, 2026, 00:22)
+
+PASS  unit tests pass on the repo and on the shipped copy (17 + 17)
+PASS  first run: settings.ini, .env (mode 600) and inbox/ with 8 samples created, exit 0
+PASS  first run: leads.csv = tests/expected_leads.csv (8 rows, every field), 3 flagged needs_human
+PASS  default settings: nothing sent (0 requests reached the fake services), empty outbox
+PASS  second run: 0 new, leads.csv byte for byte the same, exit 0
+PASS  new message: only it is analysed (1 new, 9 rows), the 8 earlier rows unchanged
+PASS  --check: exit 0, settings OK, nothing processed
+PASS  bad setting (crm = salesforce): exit 3, names the value and the allowed ones
+PASS  all destinations on, no keys, dry run: exit 0, plan saved in outbox, 0 requests sent
+PASS  --live with keys missing: exit 3 before anything, lists the missing keys, 0 requests
+PASS  dry run with keys: 0 requests; outbox shows URL / headers / body with every key replaced by <NAME>
+PASS  --live: 9 Sheet rows (302 redirect followed), HubSpot only the 3 leads/quotes with email + follow-up (4), alerts only for the 3 needs_human
+PASS  --live: spam, complaint, support, billing and the lead without email never reach the CRM; duplicate contact (409) not an error
+PASS  --live again: 0 requests, nothing sent twice, exit 0
+PASS  Slack down: exit 1 with a clear warning after 3 tries, Telegram still sent; next run sends only the Slack alert
+PASS  wrong Sheet secret: exit 1, the row is reported refused, not marked as sent
+PASS  Pipedrive: one person per lead with email (5), then 5 leads each linked to the person id returned, exit 0
+PASS  Airtable: 5 records to the right base/table, typecast on, exit 0
+PASS  OpenAI + Anthropic: AI fields used, email header wins, unreadable answer -> rules + needs_human, injection flagged
+PASS  AI requests: fixed instructions say messages are data; message text only in the user turn
+PASS  AI key refused: exit 4 with a clear message
+PASS  setup.ps1 (PowerShell 7): fresh copy gives the same leads.csv as setup.sh; second run 0 new; -Live without keys exit 3
+PASS  Python 3.9 (oldest supported): same leads.csv, exit 0
+PASS  build_dist.sh: rebuild gives the same ZIP; refuses a .env, a pasted key, a real email, payment wording, a real .env.example value
+PASS  shipped ZIP holds no .env, settings.ini, inbox/ or output/; no test key in any output file
+
+25 passed, 0 failed

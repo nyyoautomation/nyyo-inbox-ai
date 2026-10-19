@@ -2,17 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
+  <meta name="theme-color" content="#050814" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Inbox AI — Nyyo Automation" />
+  <meta property="og:description" content="Sort emails & draft replies. From $149." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://nyyoautomation.github.io/nyyoautomation/demos/assets/logo.png" />
+
   <title>Inbox AI (no API key) — Nyyo Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./nyyo-kit.css" />
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
+<!-- NYYO_PREMIUM_V1 -->
   <div class="wrap">
-    <header class="hero">
+            <div class="topbar">
+      <a class="brand" href="https://github.com/nyyoautomation">
+        <img src="../assets/logo.png" alt="" width="34" height="34" />
+        <span>Nyyo Automation</span>
+      </a>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">
+        <a class="btn btn-ghost btn-sm" href="https://nyyoautomation.github.io/nyyoautomation/demos/">All demos</a>
+        <a class="btn btn-primary btn-sm" href="https://laborx.com/freelancers/users/id475124" rel="noopener">Hire me on LaborX</a>
+      </div>
+    </div>
+<header class="hero">
       <span class="tag">Runs in your browser · nothing uploaded · no API key</span>
+        <span class="tag kit-free" style="color:#041018;background:linear-gradient(135deg,#3d8bff,#39ff88);border-color:transparent;font-weight:700">FREE · 1-click install kit included</span>
       <h1 style="margin:0 0 8px">AI that sorts emails & tickets inside your tool</h1>
       <p style="margin:0;color:#9aa8c7">Paste a customer email → get category, extracted fields, and a draft reply. Same idea wired into Gmail, Sheets or your CRM.</p>
-    </header>
+          <div class="meta" aria-label="Offer">
+        <span><strong>From $149</strong></span>
+        <span><strong>Available on LaborX</strong></span>
+        <span><strong>Remote · Worldwide</strong></span>
+        <span><strong>Example data</strong> labeled</span>
+      </div>
+</header>
     <section class="explainer">
       <h2>What is this? (plain English)</h2>
       <p style="margin:0 0 8px;color:#9aa8c7">Instead of reading every message, software tags it (support / quote / complaint…), pulls out order id & amount, and drafts a reply.</p>
@@ -21,8 +52,14 @@
         <li>Click <strong>Analyze</strong> — results stay on this device.</li>
         <li>That’s the product we wire into your inbox or helpdesk.</li>
       </ol>
-      <div class="benefit"><strong>Business benefit:</strong> faster first response, fewer missed complaints. Integrations from about <strong>$300</strong> (CRM-connected from <strong>$500</strong>).</div>
+      <div class="benefit"><strong>Business benefit:</strong> faster first response, fewer missed complaints. Integrations from <strong>$149</strong> (your own API key) · Standard <strong>$399</strong> · Premium <strong>$849</strong>.</div>
     </section>
+
+<section class="steps" aria-label="How it works">
+<div class="step"><span class="n">1</span><h3>Sample</h3><p>Click a sample email (or paste fictional text).</p></div>
+<div class="step"><span class="n">2</span><h3>Analyze</h3><p>Category, fields, and draft reply appear locally.</p></div>
+<div class="step"><span class="n">3</span><h3>Integrate</h3><p>We wire the same logic into Gmail / helpdesk / CRM.</p></div>
+</section>
     <div>
       <button class="chip" data-sample="0" type="button">Sample: complaint</button>
       <button class="chip" data-sample="1" type="button">Sample: quote</button>
@@ -43,7 +80,63 @@
         <p style="color:#9aa8c7;font-size:.8rem" id="engine"></p>
       </div>
     </div>
-    <p class="footer"><a href="https://laborx.com/freelancers/users/id475124">Hire Nyyo Automation</a> · <a href="https://github.com/nyyoautomation/nyyo-inbox-ai">Repo</a></p>
+    <section class="metrics" aria-label="Example metrics">
+<div class="metric"><div class="v">$149</div><div class="l"><strong>From</strong> · inbox AI</div></div>
+<div class="metric"><div class="v">$399</div><div class="l"><strong>Standard</strong> · 5 days</div></div>
+<div class="metric"><div class="v">Local</div><div class="l"><strong>Privacy</strong> · demo stays on device</div></div>
+</section>
+<p class="metrics-note">Example figures for illustration — not a client case study.</p>
+<div class="badges" aria-label="Tech stack"><span>JavaScript</span><span>Heuristics</span><span>Optional LLM</span><span>Gmail</span></div>
+    <!-- NYYO_INTEGRATE_START -->
+
+<section class="nyyo-integrate" aria-label="Integration and setup">
+  <div class="block">
+    <h2>Where it plugs in</h2>
+    <p class="sub">Sits on top of the inbox you already use.</p>
+    <div class="plug-chips" role="list">
+<span class="plug-chip" role="listitem"><span class="ic" aria-hidden="true">Gm</span>Gmail</span>
+<span class="plug-chip" role="listitem"><span class="ic" aria-hidden="true">GW</span>Google Workspace</span>
+<span class="plug-chip" role="listitem"><span class="ic" aria-hidden="true">Ou</span>Outlook / Microsoft 365</span>
+<span class="plug-chip" role="listitem"><span class="ic" aria-hidden="true">API</span>Helpdesk webhook</span>
+<span class="plug-chip" role="listitem"><span class="ic" aria-hidden="true">Sl</span>Slack notify</span>
+</div>
+    
+    <p class="honest-note">Official Gmail / Microsoft Graph only — no password scraping.</p>
+  </div>
+  <div class="block">
+    <h2>How we set it up</h2>
+    <p class="sub">Delivery by tier: Starter $149 — 3 days · Standard $399 — 5 days · Premium $849 — 10 days · fixed scope · handover included</p>
+    <ol class="setup-steps">
+      <li><span class="n">1</span><h3>You send us</h3><p>mailbox access (or exports) + label rules you want (billing, support, spam…).</p></li>
+      <li><span class="n">2</span><h3>We build &amp; connect</h3><p>we wire classification, drafts and labels via official APIs (3–10 days by tier).</p></li>
+      <li><span class="n">3</span><h3>You get the result</h3><p>working labels/drafts, handover + video. You keep the mailbox.</p></li>
+    </ol>
+  </div>
+  <div class="block">
+    <h2>Hosting — no lock-in</h2>
+    <p class="sub">Pick what fits your stack. We never hold your data hostage.</p>
+    <div class="host-grid">
+      <div class="host-card"><strong>We host it</strong><p>Optional automation host that calls Gmail/Outlook APIs.</p></div>
+      <div class="host-card"><strong>On your account</strong><p>n8n/Make on your account, or Apps Script under your Workspace.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NYYO_INTEGRATE_END -->
+
+<section class="cta-band" aria-label="Hire">
+      <div>
+        <h2>Want this for your stack?</h2>
+        <p>From <strong>$149</strong> · fixed scope · 7-day bugfix · available on LaborX · Remote · Worldwide</p>
+        <p style="margin:8px 0 0;font-size:.88rem">The kit is free and included — you only pay for the build.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="https://laborx.com/freelancers/users/id475124" rel="noopener">Hire me on LaborX</a>
+        <a class="btn btn-ghost" href="https://github.com/nyyoautomation/nyyoautomation/tree/main/demos/inbox-ai">Repo</a>
+      </div>
+    </section>
+
+    <p class="footer"><a href="https://github.com/nyyoautomation">Available on LaborX</a> · <a href="https://github.com/nyyoautomation/nyyoautomation/tree/main/demos/inbox-ai">Repo</a></p>
   </div>
   <script src="./js/classify.js"></script>
   <script>
@@ -68,7 +161,7 @@ User email: alex@shop.demo. Please help ASAP.
 Alex`,
 `Hi billing,
 
-I was charged €79 twice for invoice INV-8821 on 03/10/2026.
+I was charged $79 twice for invoice INV-8821 on 03/10/2026.
 Please check.
 
 Maya Chen
@@ -95,5 +188,10 @@ maya@studio.demo`
     document.getElementById("mail").value = SAMPLES[0];
     analyze();
   </script>
+  <div class="mobile-cta" aria-label="Hire shortcut">
+    <a class="btn btn-primary" href="https://laborx.com/freelancers/users/id475124" rel="noopener">Hire me on LaborX</a>
+  </div>
+
+  <script>document.addEventListener("DOMContentLoaded",function(){if(window.lucide)lucide.createIcons();});</script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+$ SH
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: openai (gpt-4.1-mini) · Sheet: no · CRM: none · alerts: none · mode: dry run (nothing is sent)
+[!] the openai key was refused (HTTP 401): check it in .env
+
+[!] A key was refused: check it in .env (INSTALL.md, Troubleshooting).
+
+[exit code 4]

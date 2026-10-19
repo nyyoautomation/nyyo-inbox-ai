@@ -1,0 +1,28 @@
+--- clean copy of the repo
+gitleaks check of the staged kit: no leaks
+    64684                     19 files
+sha256 8b49564a33b8813eb9f533e589e6305b3bca7ba0cd5d414ecde0a5215bc8db5c
+[build exit 0]
+--- a .env dropped into config/
+refusing: forbidden file(s) in kit:
+./config/.env
+[build exit 1]
+--- a key pasted into the code
+gitleaks check of the staged kit: no leaks
+/tmp/tmp.1ELb0hR3Rc/nyyo-crm-kit/kit/nyyo_crm.py:537:# sk-proj-Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1
+refusing: secret-like string in kit
+[build exit 1]
+--- a real-looking email address in a sample
+gitleaks check of the staged kit: no leaks
+/tmp/tmp.N0PKymdC9v/nyyo-crm-kit/samples/inbox/99_x.txt:1:buyer@realmail.test
+refusing: real-looking email address in kit (lines above)
+[build exit 1]
+--- payment wording in the Sheet script
+gitleaks check of the staged kit: no leaks
+/tmp/tmp.R2LF2KTCII/nyyo-crm-kit/sheets/NyyoCrmWebhook.gs:38:// Pay via PayPal to skip the queue.
+refusing: off-platform contact, payment or delivery wording in kit (lines above)
+[build exit 1]
+--- a real value in .env.example
+HUBSPOT_TOKEN=q8w7e6r5t4
+refusing: .env.example has a value that is not a placeholder (line above)
+[build exit 1]

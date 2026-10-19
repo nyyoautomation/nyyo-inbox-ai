@@ -1,0 +1,8 @@
+$ SH --check
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: no · CRM: none · alerts: none · mode: dry run (nothing is sent)
+==> Settings OK. 9 message file(s) in inbox/. Nothing processed (--check).
+
+==> Finished. Your table: <scratch>/nyyo-crm-kit/output/leads.csv
+
+[exit code 0]

@@ -1,0 +1,20 @@
+$ SH
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: openai (gpt-4.1-mini) · Sheet: no · CRM: none · alerts: none · mode: dry run (nothing is sent)
+==> 01_website_lead.eml: new_lead (0.91)
+==> 02_quote_request.eml: quote_request (0.91)
+==> 03_complaint.eml: complaint (0.91)  -> NEEDS A HUMAN: complaint: a person should answer
+==> 04_billing.txt: billing (0.91)
+==> 05_support.txt: support (0.91)
+==> 06_spam.txt: spam (0.91)
+==> 07_lead_no_email.txt: new_lead (0.91)  -> NEEDS A HUMAN: lead without an email address
+==> 08_tricky_lead.eml: new_lead (0.91)  -> NEEDS A HUMAN: message tries to give the AI instructions
+==> 09_follow_up.eml: new_lead (0.91)
+==> 10_complaint_again.eml: complaint (0.91)  -> NEEDS A HUMAN: complaint: a person should answer
+==> 11_new_lead.txt: new_lead (0.91)
+==> 12_malformed.txt: quote_request (0.00)  -> NEEDS A HUMAN: AI answer was not valid JSON, used the built-in rules instead; low confidence (0.00)
+==> 12 new message(s) analysed, 12 in output/leads.csv, 5 need a human.
+
+==> Finished. Your table: <scratch>/nyyo-crm-kit/output/leads.csv
+
+[exit code 0]

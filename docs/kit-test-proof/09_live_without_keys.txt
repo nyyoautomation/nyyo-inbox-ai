@@ -1,0 +1,8 @@
+$ SH --live
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: yes · CRM: hubspot · alerts: both · mode: LIVE (sends for real)
+[!] Missing in .env: GOOGLE_SHEET_WEBHOOK_URL, GOOGLE_SHEET_WEBHOOK_SECRET, HUBSPOT_TOKEN, SLACK_WEBHOOK_URL, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (see INSTALL.md, Step 4)
+
+[!] Fix config/settings.ini or .env (see the message above) and run ./setup.sh again.
+
+[exit code 3]

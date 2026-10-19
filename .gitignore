@@ -1,0 +1,6 @@
+/.env
+/config/settings.ini
+/inbox/
+/output/
+__pycache__/
+*.pyc

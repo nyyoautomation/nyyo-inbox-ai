@@ -1,0 +1,3 @@
+# Nyyo inbox -> CRM kit: no third-party Python packages.
+# The kit uses only the Python 3.9+ standard library, so there is nothing to download, update or pin.
+# (The build guard pins its one tool, gitleaks, by image digest in scripts/build_dist.sh.)

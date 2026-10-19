@@ -1,0 +1,9 @@
+$ SH --live
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: yes · CRM: hubspot · alerts: both · mode: LIVE (sends for real)
+==> 0 new message(s) analysed, 9 in output/leads.csv, 3 need a human.
+==> Sent: 19 · failed: 0 · already sent before: skipped.
+
+==> Finished. Your table: <scratch>/nyyo-crm-kit/output/leads.csv
+
+[exit code 0]

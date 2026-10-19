@@ -1,0 +1,8 @@
+$ PS <scratch>/ps
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: no · CRM: none · alerts: none · mode: dry run (nothing is sent)
+==> 0 new message(s) analysed, 8 in output/leads.csv, 3 need a human.
+
+==> Finished. Your table: <scratch>/ps\output\leads.csv
+
+[exit code 0]

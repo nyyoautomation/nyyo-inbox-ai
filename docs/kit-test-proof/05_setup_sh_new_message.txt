@@ -1,0 +1,9 @@
+$ SH
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: no · CRM: none · alerts: none · mode: dry run (nothing is sent)
+==> 09_follow_up.eml: new_lead (0.95)
+==> 1 new message(s) analysed, 9 in output/leads.csv, 3 need a human.
+
+==> Finished. Your table: <scratch>/nyyo-crm-kit/output/leads.csv
+
+[exit code 0]

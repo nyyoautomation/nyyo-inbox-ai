@@ -1,0 +1,26 @@
+$ python3 -m unittest -v /workspace/demos/nyyo-inbox-ai/tests/unit_test.py
+
+test_billing (tests.unit_test.Extraction.test_billing) ... ok
+test_complaint_needs_human (tests.unit_test.Extraction.test_complaint_needs_human) ... ok
+test_injection_flagged (tests.unit_test.Extraction.test_injection_flagged) ... ok
+test_lead_fields (tests.unit_test.Extraction.test_lead_fields) ... ok
+test_lead_without_email (tests.unit_test.Extraction.test_lead_without_email) ... ok
+test_no_drafts_option (tests.unit_test.Extraction.test_no_drafts_option) ... ok
+test_quote (tests.unit_test.Extraction.test_quote) ... ok
+test_support_and_spam (tests.unit_test.Extraction.test_support_and_spam) ... ok
+test_threshold (tests.unit_test.Extraction.test_threshold) ... ok
+test_clean_ai_rejects_bad_values (tests.unit_test.Safety.test_clean_ai_rejects_bad_values) ... ok
+test_crm_only_leads_with_email (tests.unit_test.Safety.test_crm_only_leads_with_email) ... ok
+test_pipedrive_two_steps (tests.unit_test.Safety.test_pipedrive_two_steps) ... ok
+test_redact (tests.unit_test.Safety.test_redact) ... ok
+test_sheet_safe (tests.unit_test.Safety.test_sheet_safe) ... ok
+test_bad_values (tests.unit_test.Settings.test_bad_values) ... ok
+test_defaults_and_secrets (tests.unit_test.Settings.test_defaults_and_secrets) ... ok
+test_env_file (tests.unit_test.Settings.test_env_file) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.013s
+
+OK
+
+[exit code 0]

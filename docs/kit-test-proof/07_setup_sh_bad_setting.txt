@@ -1,0 +1,7 @@
+$ SH
+
+[!] [send] crm = salesforce: use none, hubspot, pipedrive or airtable
+
+[!] Fix config/settings.ini or .env (see the message above) and run ./setup.sh again.
+
+[exit code 3]

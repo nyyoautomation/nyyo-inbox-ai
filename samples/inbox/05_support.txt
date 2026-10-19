@@ -1,0 +1,8 @@
+From: Priya Nair <priya@example.com>
+Subject: Can't access my account
+Date: 2026-10-15 10:02
+
+Hello, how do I reset my password? The login page shows an error since yesterday.
+
+Regards,
+Priya Nair

@@ -1,0 +1,11 @@
+$ SH --live
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: yes · CRM: hubspot · alerts: both · mode: LIVE (sends for real)
+==> 10_complaint_again.eml: complaint (0.95)  -> NEEDS A HUMAN: complaint: a person should answer
+[!] 10_complaint_again.eml -> slack: HTTP 500 (will retry next run)
+==> 1 new message(s) analysed, 10 in output/leads.csv, 4 need a human.
+==> Sent: 2 · failed: 1 · already sent before: skipped.
+
+[!] Finished with warnings (see [!] lines above). Your table: <scratch>/nyyo-crm-kit/output/leads.csv
+
+[exit code 1]

@@ -1,0 +1,28 @@
+Date: Oct 20, 2026, 00:22
+System: Linux x86_64
+Python on the host: Python 3.13.5
+PowerShell: 7.4.6
+Docker: 26.1.5+dfsg1
+Kit ZIP: nyyo-crm-kit.zip sha256 8b49564a33b8813eb9f533e589e6305b3bca7ba0cd5d414ecde0a5215bc8db5c
+Scratch folder: crmkit-test.fWaU (empty before unzip)
+
+unzipped:
+./.env.example
+./INSTALL.md
+./LICENSE
+./config/settings.example.ini
+./kit/nyyo_crm.py
+./requirements.txt
+./samples/inbox/01_website_lead.eml
+./samples/inbox/02_quote_request.eml
+./samples/inbox/03_complaint.eml
+./samples/inbox/04_billing.txt
+./samples/inbox/05_support.txt
+./samples/inbox/06_spam.txt
+./samples/inbox/07_lead_no_email.txt
+./samples/inbox/08_tricky_lead.eml
+./setup.ps1
+./setup.sh
+./sheets/NyyoCrmWebhook.gs
+./tests/fake_services.py
+./tests/unit_test.py

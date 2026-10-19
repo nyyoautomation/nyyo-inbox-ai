@@ -25,7 +25,7 @@
     if (email) fields.email = email[0];
     const order = text.match(/\b(?:order|commande)\s*#?\s*([A-Z0-9-]{4,})/i);
     if (order) fields.order_id = order[1];
-    const money = text.match(/(?:\$|€|USD|EUR)\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\s*(?:\$|€|USD|EUR)/i);
+    const money = text.match(/(?:\$|\u20ac|USD|EUR)\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\s*(?:\$|\u20ac|USD|EUR)/i);
     if (money) fields.amount = (money[1] || money[2] || "").replace(",", ".");
     const date = text.match(/\b(\d{4}-\d{2}-\d{2}|\d{1,2}[\/.-]\d{1,2}[\/.-]\d{2,4})\b/);
     if (date) fields.date = date[1];

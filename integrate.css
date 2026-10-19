@@ -1,0 +1,105 @@
+/* Where it plugs in / How we set it up / Hosting */
+.nyyo-integrate {
+  margin: 18px 0 8px;
+  display: grid;
+  gap: 12px;
+}
+.nyyo-integrate .block {
+  background: var(--panel, rgba(18,28,52,.72));
+  border: 1px solid var(--border, rgba(120,160,255,.14));
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  backdrop-filter: blur(12px);
+}
+.nyyo-integrate .block h2 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+.nyyo-integrate .block .sub {
+  margin: 0 0 12px;
+  color: var(--muted, #8b9bb8);
+  font-size: 0.88rem;
+}
+.plug-chips {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.plug-chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border, rgba(120,160,255,.14));
+  background: rgba(255,255,255,.03);
+  font-size: 0.82rem; font-weight: 600; color: var(--text, #e8eefc);
+}
+.plug-chip .ic {
+  width: 22px; height: 22px; border-radius: 6px;
+  display: grid; place-items: center;
+  font-size: 0.72rem; font-weight: 800;
+  background: linear-gradient(135deg, rgba(61,139,255,.25), rgba(57,255,136,.18));
+  color: #e8eefc;
+}
+.setup-steps {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0;
+  padding: 0; list-style: none;
+}
+.setup-steps li {
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--border, rgba(120,160,255,.14));
+  border-radius: 14px; padding: 14px;
+}
+.setup-steps .n {
+  display: inline-grid; place-items: center;
+  width: 26px; height: 26px; border-radius: 8px; margin-bottom: 8px;
+  background: rgba(61,139,255,.15); color: var(--lime, #39ff88);
+  font-weight: 800; font-size: 0.8rem;
+}
+.setup-steps h3 { margin: 0 0 4px; font-size: 0.92rem; }
+.setup-steps p { margin: 0; color: var(--muted, #8b9bb8); font-size: 0.84rem; }
+.host-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+}
+.host-card {
+  border-radius: 14px; padding: 14px;
+  border: 1px solid var(--border, rgba(120,160,255,.14));
+  background: rgba(255,255,255,.03);
+}
+.host-card strong { display: block; margin-bottom: 4px; }
+.host-card p { margin: 0; color: var(--muted, #8b9bb8); font-size: 0.84rem; }
+.embed-box {
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border, rgba(120,160,255,.14));
+  background: #070b18;
+  overflow: hidden;
+}
+.embed-box .embed-label {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 12px; font-size: 0.72rem; color: var(--muted, #8b9bb8);
+  border-bottom: 1px solid var(--border, rgba(120,160,255,.14));
+  background: rgba(255,255,255,.02);
+}
+.embed-box pre {
+  margin: 0; padding: 12px 14px; overflow-x: auto;
+  font-size: 0.78rem; line-height: 1.45; color: #cfe0ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.embed-box code { color: #9ec2ff; }
+.honest-note {
+  margin: 10px 0 0; font-size: 0.78rem; color: var(--muted, #8b9bb8);
+}
+@media (max-width: 700px) {
+  .setup-steps, .host-grid { grid-template-columns: 1fr; }
+}
+
+
+.nyyo-install-kit{margin:12px 0 8px;border-radius:18px;padding:1px;background:linear-gradient(145deg,rgba(61,139,255,.55),rgba(57,255,136,.35));box-shadow:0 16px 40px rgba(0,0,0,.28)}
+.nyyo-install-kit-inner{border-radius:17px;background:linear-gradient(165deg,rgba(14,22,42,.97),rgba(8,12,28,.98));padding:18px 18px 16px}
+.nyyo-install-kit h2{margin:0 0 6px;font-size:1.05rem;letter-spacing:-.02em}
+.nyyo-install-kit .free-pill{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;color:#041018;background:linear-gradient(135deg,#3d8bff,#39ff88);padding:4px 10px;border-radius:999px;margin-bottom:10px}
+.nyyo-install-kit .sub{margin:0 0 12px;color:var(--muted,#8b9bb8);font-size:.88rem}
+.kit-actions{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.kit-actions a,.kit-actions button{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:999px;font:600 .8rem Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer;border:1px solid var(--border,rgba(120,160,255,.14));color:var(--text,#e8eefc);background:rgba(255,255,255,.04)}
+.kit-actions a.primary{border:0;color:#041018;background:linear-gradient(135deg,#3d8bff,#39ff88)}
+.kit-list{margin:8px 0 0;padding-left:1.1rem;color:var(--muted,#8b9bb8);font-size:.84rem}
+.kit-list .ready{color:var(--lime,#39ff88)}.kit-list .soon{color:var(--warn,#ffd166)}

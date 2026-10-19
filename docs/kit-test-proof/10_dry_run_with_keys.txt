@@ -1,0 +1,9 @@
+$ SH
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: yes · CRM: hubspot · alerts: both · mode: dry run (nothing is sent)
+==> 0 new message(s) analysed, 9 in output/leads.csv, 3 need a human.
+==> Dry run: 19 request(s) saved in output/outbox/ for you to check. Add --live to send them.
+
+==> Finished. Your table: <scratch>/nyyo-crm-kit/output/leads.csv
+
+[exit code 0]

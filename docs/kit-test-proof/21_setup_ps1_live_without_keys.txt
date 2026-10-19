@@ -1,0 +1,8 @@
+$ PS <scratch>/ps -Live
+
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: no · CRM: hubspot · alerts: none · mode: LIVE (sends for real)
+[!] Missing in .env: HUBSPOT_TOKEN (see INSTALL.md, Step 4)
+
+[!] Fix config/settings.ini or .env (see the message above) and run setup again.
+
+[exit code 3]

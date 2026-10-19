@@ -1,0 +1,7 @@
+$ bash /workspace/demos/nyyo-inbox-ai/scripts/build_dist.sh
+
+gitleaks check of the staged kit: no leaks
+    64684                     19 files
+sha256 8b49564a33b8813eb9f533e589e6305b3bca7ba0cd5d414ecde0a5215bc8db5c
+
+[exit code 0]

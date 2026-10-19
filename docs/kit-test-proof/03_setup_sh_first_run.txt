@@ -1,0 +1,19 @@
+$ SH
+
+==> Created config/settings.ini (AI: built-in rules, nothing switched on). Edit it later, then run ./setup.sh again.
+==> Created .env for your keys (only you can read it). Fill it only when you switch something on.
+==> Created inbox/ with 8 made-up sample messages. Replace them with your own .eml or .txt files.
+==> Nyyo inbox -> CRM kit 1.0.0 · AI: mock (rules) · Sheet: no · CRM: none · alerts: none · mode: dry run (nothing is sent)
+==> 01_website_lead.eml: new_lead (0.95)
+==> 02_quote_request.eml: quote_request (0.95)
+==> 03_complaint.eml: complaint (0.95)  -> NEEDS A HUMAN: complaint: a person should answer
+==> 04_billing.txt: billing (0.95)
+==> 05_support.txt: support (0.95)
+==> 06_spam.txt: spam (0.95)
+==> 07_lead_no_email.txt: new_lead (0.80)  -> NEEDS A HUMAN: lead without an email address
+==> 08_tricky_lead.eml: new_lead (0.95)  -> NEEDS A HUMAN: message tries to give the AI instructions
+==> 8 new message(s) analysed, 8 in output/leads.csv, 3 need a human.
+
+==> Finished. Your table: <scratch>/nyyo-crm-kit/output/leads.csv
+
+[exit code 0]
