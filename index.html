@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inbox AI (no API key) — Nyyo Automation</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <span class="tag">Runs in your browser · nothing uploaded · no API key</span>
+      <h1 style="margin:0 0 8px">AI that sorts emails & tickets inside your tool</h1>
+      <p style="margin:0;color:#9aa8c7">Paste a customer email → get category, extracted fields, and a draft reply. Same idea wired into Gmail, Sheets or your CRM.</p>
+    </header>
+    <section class="explainer">
+      <h2>What is this? (plain English)</h2>
+      <p style="margin:0 0 8px;color:#9aa8c7">Instead of reading every message, software tags it (support / quote / complaint…), pulls out order id & amount, and drafts a reply.</p>
+      <ol>
+        <li>Click a sample email (or paste your own fictional text).</li>
+        <li>Click <strong>Analyze</strong> — results stay on this device.</li>
+        <li>That’s the product we wire into your inbox or helpdesk.</li>
+      </ol>
+      <div class="benefit"><strong>Business benefit:</strong> faster first response, fewer missed complaints. Integrations from about <strong>$300</strong> (CRM-connected from <strong>$500</strong>).</div>
+    </section>
+    <div>
+      <button class="chip" data-sample="0" type="button">Sample: complaint</button>
+      <button class="chip" data-sample="1" type="button">Sample: quote</button>
+      <button class="chip" data-sample="2" type="button">Sample: support</button>
+      <button class="chip" data-sample="3" type="button">Sample: billing</button>
+    </div>
+    <div class="grid" style="margin-top:12px">
+      <div class="panel">
+        <textarea id="mail" placeholder="Paste email body…"></textarea>
+        <button id="go" type="button">Analyze</button>
+      </div>
+      <div class="panel">
+        <div>Category: <span class="badge" id="label">—</span></div>
+        <h3>Extracted fields</h3>
+        <table class="table"><tbody id="fields"></tbody></table>
+        <h3>Draft reply</h3>
+        <pre id="reply">—</pre>
+        <p style="color:#9aa8c7;font-size:.8rem" id="engine"></p>
+      </div>
+    </div>
+    <p class="footer"><a href="https://laborx.com/freelancers/users/id475124">Hire Nyyo Automation</a> · <a href="https://github.com/nyyoautomation/nyyo-inbox-ai">Repo</a></p>
+  </div>
+  <script src="./js/classify.js"></script>
+  <script>
+    const SAMPLES = [
+`Hi,
+
+This is unacceptable. Order #A19-7742 for the Growth plan ($290) on 2026-09-12 never arrived.
+I want a refund. Contact me at jordan@client.demo.
+
+Jordan Blake`,
+`Hello,
+
+We're interested in a quote for automating our lead form into HubSpot.
+Budget around 400 USD. Product: LeadFlow.
+
+Thanks,
+Sam Rivera
+sam@acme.demo`,
+`Support — the dashboard is not working after login (error 502).
+User email: alex@shop.demo. Please help ASAP.
+
+Alex`,
+`Hi billing,
+
+I was charged €79 twice for invoice INV-8821 on 03/10/2026.
+Please check.
+
+Maya Chen
+maya@studio.demo`
+    ];
+    document.querySelectorAll("[data-sample]").forEach(btn=>{
+      btn.onclick=()=>{ document.getElementById("mail").value = SAMPLES[Number(btn.dataset.sample)]; analyze(); };
+    });
+    function analyze(){
+      const text = document.getElementById("mail").value;
+      const r = NyyoInboxAI.analyze(text);
+      document.getElementById("label").textContent = r.label;
+      const tb = document.getElementById("fields");
+      const entries = Object.entries(r.fields);
+      tb.innerHTML = entries.length ? entries.map(([k,v])=>`<tr><th>${k}</th><td>${v}</td></tr>`).join("") : "<tr><td colspan=2>No fields detected</td></tr>";
+      document.getElementById("reply").textContent = r.draft_reply;
+      document.getElementById("engine").textContent = r.engine + " · confidence " + r.confidence;
+      // append to session table log
+      const log = JSON.parse(sessionStorage.getItem("nyyo_inbox_log")||"[]");
+      log.unshift({label:r.label, fields:r.fields, at:new Date().toISOString()});
+      sessionStorage.setItem("nyyo_inbox_log", JSON.stringify(log.slice(0,20)));
+    }
+    document.getElementById("go").onclick = analyze;
+    document.getElementById("mail").value = SAMPLES[0];
+    analyze();
+  </script>
+</body>
+</html>
