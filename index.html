@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="../assets/logo.png" type="image/png" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 28 28%27%3E%3Crect width=%2728%27 height=%2728%27 rx=%278%27 fill=%27%231D4ED8%27/%3E%3Cpath d=%27M8.5 19.5V8.5h2.2l6.6 7.4V8.5h2.2v11h-2.2l-6.6-7.4v7.4z%27 fill=%27%23FFFFFF%27/%3E%3C/svg%3E" />
   <meta name="theme-color" content="#050814" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta property="og:title" content="Inbox AI — Nyyo Automation" />
   <meta property="og:description" content="Sort emails & draft replies. From $149." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://nyyoautomation.github.io/nyyoautomation/demos/assets/logo.png" />
 
   <title>Inbox AI (no API key) — Nyyo Automation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,13 +17,14 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./nyyo-kit.css" />
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <style>.brand__mark{width:28px;height:28px;border-radius:8px;flex:none;display:block;box-shadow:none}</style>
 </head>
 <body>
-<!-- NYYO_PREMIUM_V1 -->
+<!-- NYYO_KIT_V1 -->
   <div class="wrap">
             <div class="topbar">
       <a class="brand" href="https://github.com/nyyoautomation">
-        <img src="../assets/logo.png" alt="" width="34" height="34" />
+        <svg class="brand__mark" viewBox="0 0 28 28" width="28" height="28" aria-hidden="true" focusable="false"><rect width="28" height="28" rx="8" fill="#1D4ED8"/><path d="M8.5 19.5V8.5h2.2l6.6 7.4V8.5h2.2v11h-2.2l-6.6-7.4v7.4z" fill="#FFFFFF"/></svg>
         <span>Nyyo Automation</span>
       </a>
       <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">
@@ -52,7 +52,7 @@
         <li>Click <strong>Analyze</strong> — results stay on this device.</li>
         <li>That’s the product we wire into your inbox or helpdesk.</li>
       </ol>
-      <div class="benefit"><strong>Business benefit:</strong> faster first response, fewer missed complaints. Integrations from <strong>$149</strong> (your own API key) · Standard <strong>$399</strong> · Premium <strong>$849</strong>.</div>
+      <div class="benefit"><strong>Business benefit:</strong> faster first response, fewer missed complaints. Integrations from <strong>$149</strong> (your own API key) · Standard <strong>$399</strong> · Pro <strong>$849</strong>.</div>
     </section>
 
 <section class="steps" aria-label="How it works">
@@ -105,7 +105,7 @@
   </div>
   <div class="block">
     <h2>How we set it up</h2>
-    <p class="sub">Delivery by tier: Starter $149 — 3 days · Standard $399 — 5 days · Premium $849 — 10 days · fixed scope · handover included</p>
+    <p class="sub">Delivery by tier: Starter $149 — 3 days · Standard $399 — 5 days · Pro $849 — 10 days · fixed scope · handover included</p>
     <ol class="setup-steps">
       <li><span class="n">1</span><h3>You send us</h3><p>mailbox access (or exports) + label rules you want (billing, support, spam…).</p></li>
       <li><span class="n">2</span><h3>We build &amp; connect</h3><p>we wire classification, drafts and labels via official APIs (3–10 days by tier).</p></li>

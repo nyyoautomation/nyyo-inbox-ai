@@ -1,4 +1,4 @@
-Checks (Oct 20, 2026, 00:22)
+Checks (Oct 20, 2026, 00:25)
 
 PASS  unit tests pass on the repo and on the shipped copy (17 + 17)
 PASS  first run: settings.ini, .env (mode 600) and inbox/ with 8 samples created, exit 0

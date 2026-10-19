@@ -9,17 +9,17 @@ refusing: forbidden file(s) in kit:
 [build exit 1]
 --- a key pasted into the code
 gitleaks check of the staged kit: no leaks
-/tmp/tmp.1ELb0hR3Rc/nyyo-crm-kit/kit/nyyo_crm.py:537:# sk-proj-Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1
+/tmp/tmp.i8QN6MvHkO/nyyo-crm-kit/kit/nyyo_crm.py:537:# sk-proj-Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1
 refusing: secret-like string in kit
 [build exit 1]
 --- a real-looking email address in a sample
 gitleaks check of the staged kit: no leaks
-/tmp/tmp.N0PKymdC9v/nyyo-crm-kit/samples/inbox/99_x.txt:1:buyer@realmail.test
+/tmp/tmp.Dck6JJqnQy/nyyo-crm-kit/samples/inbox/99_x.txt:1:buyer@realmail.test
 refusing: real-looking email address in kit (lines above)
 [build exit 1]
 --- payment wording in the Sheet script
 gitleaks check of the staged kit: no leaks
-/tmp/tmp.R2LF2KTCII/nyyo-crm-kit/sheets/NyyoCrmWebhook.gs:38:// Pay via PayPal to skip the queue.
+/tmp/tmp.h3VJs3uFUX/nyyo-crm-kit/sheets/NyyoCrmWebhook.gs:38:// Pay via PayPal to skip the queue.
 refusing: off-platform contact, payment or delivery wording in kit (lines above)
 [build exit 1]
 --- a real value in .env.example

@@ -1,10 +1,10 @@
-Date: Oct 20, 2026, 00:22
+Date: Oct 20, 2026, 00:25
 System: Linux x86_64
 Python on the host: Python 3.13.5
 PowerShell: 7.4.6
 Docker: 26.1.5+dfsg1
 Kit ZIP: nyyo-crm-kit.zip sha256 8b49564a33b8813eb9f533e589e6305b3bca7ba0cd5d414ecde0a5215bc8db5c
-Scratch folder: crmkit-test.fWaU (empty before unzip)
+Scratch folder: crmkit-test.igYc (empty before unzip)
 
 unzipped:
 ./.env.example

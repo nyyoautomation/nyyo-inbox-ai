@@ -19,7 +19,7 @@ test_defaults_and_secrets (tests.unit_test.Settings.test_defaults_and_secrets) .
 test_env_file (tests.unit_test.Settings.test_env_file) ... ok
 
 ----------------------------------------------------------------------
-Ran 17 tests in 0.012s
+Ran 17 tests in 0.015s
 
 OK
 

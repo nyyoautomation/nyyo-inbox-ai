@@ -15,7 +15,7 @@
 Nothing is uploaded. Production builds can plug OpenAI/Claude when you provide a key.
 
 ## 1-click install kit: inbox → AI → Google Sheet / CRM / alerts
-**Included free with the Starter package.** The same idea as the demo, running on your own computer with your own
+**Included free with the Starter, Standard and Pro packages.** The same idea as the demo, running on your own computer with your own
 messages: drop `.eml` or `.txt` files in a folder, run one command, get a Sheet-ready table (`leads.csv`) with the
 category, fields, summary, draft reply and a `needs_human` flag. When you are ready it can add each row to your
 **Google Sheet**, create leads in **HubSpot, Pipedrive or Airtable**, and alert **Slack or Telegram**.
