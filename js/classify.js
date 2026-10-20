@@ -1,10 +1,10 @@
 /** On-device inbox triage — no API key. Keyword + pattern extractor. */
 (function (g) {
   const RULES = [
-    { label: "complaint", score: 3, words: ["refund", "angry", "unacceptable", "lawyer", "complaint", "terrible", "never again", "réclamation", "remboursement"] },
-    { label: "support", score: 2, words: ["not working", "bug", "error", "help", "issue", "broken", "can't login", "support", "aide"] },
-    { label: "quote", score: 2, words: ["quote", "pricing", "how much", "proposal", "devis", "budget", "interested in"] },
-    { label: "billing", score: 2, words: ["invoice", "payment", "charged", "receipt", "facture", "carte"] },
+    { label: "complaint", score: 3, words: ["refund", "angry", "unacceptable", "lawyer", "complaint", "terrible", "never again"] },
+    { label: "support", score: 2, words: ["not working", "bug", "error", "help", "issue", "broken", "can't login", "support"] },
+    { label: "quote", score: 2, words: ["quote", "pricing", "how much", "proposal", "budget", "interested in"] },
+    { label: "billing", score: 2, words: ["invoice", "payment", "charged", "receipt"] },
     { label: "general", score: 1, words: ["thanks", "hello", "question", "info"] },
   ];
 
