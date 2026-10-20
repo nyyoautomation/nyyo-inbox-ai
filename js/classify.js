@@ -23,7 +23,7 @@
     const fields = {};
     const email = text.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i);
     if (email) fields.email = email[0];
-    const order = text.match(/\b(?:order|commande)\s*#?\s*([A-Z0-9-]{4,})/i);
+    const order = text.match(/\b(?:order)\s*#?\s*([A-Z0-9-]{4,})/i);
     if (order) fields.order_id = order[1];
     const money = text.match(/(?:\$|\u20ac|USD|EUR)\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\s*(?:\$|\u20ac|USD|EUR)/i);
     if (money) fields.amount = (money[1] || money[2] || "").replace(",", ".");
@@ -31,7 +31,7 @@
     if (date) fields.date = date[1];
     const product = text.match(/\b(?:product|item|article|plan)\s*[:\-]?\s*([A-Za-z0-9][A-Za-z0-9 \-]{2,40})/i);
     if (product) fields.product = product[1].trim();
-    const name = text.match(/(?:^|\n)\s*(?:regards|thanks|cordialement|—|-)?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*$/m);
+    const name = text.match(/(?:^|\n)\s*(?:regards|thanks|—|-)?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*$/m);
     if (name) fields.signoff = name[1];
     return fields;
   }
